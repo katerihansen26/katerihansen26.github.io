@@ -1,6 +1,6 @@
 h2 {
     color:rgb(33, 112, 196);
-    background-color:beige;
+    background-color:whitesmoke;
     text-decoration: underline;
 }
 
@@ -8,6 +8,6 @@ p {
     font-size:18px;
 }
 
-img {
-    background-color:beige;
+body {
+    background-color:rgb(195, 233, 255);
 }
