@@ -2,3 +2,23 @@ body {
     background-color: black;
 }
 
+#green {
+    background-color: green;
+    color: green;
+}
+
+div {
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 250px;
+}
+
+#yellow {
+    background-color: yellow;
+    color: yellow;
+}
+
+#red {
+    background-color: red;
+    color: red;
+}
