@@ -1,29 +1,29 @@
 #the {
     color: red;
-    font-size: 300%;
 }
 
 #quick {
-    font-size: 300%;
     color: orange;
 }
 
 #brown {
-    font-size: 300%;
     color: yellow;
 }
 
 #fox {
-    font-size: 300%;
     color: green;
 }
 
 #jumps {
-    font-size: 300%;
     color: blue;
 }
 
 div {
-    border: 15px solid blue;
+    border: 10px solid blue;
     background-color: pink;
+}
+
+p {
+    margin: 10px; display: inline;
+    font-size: 300%;
 }
