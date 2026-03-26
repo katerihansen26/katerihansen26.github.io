@@ -18,12 +18,39 @@
     color: blue;
 }
 
-div {
+.pink {
     border: 10px solid blue;
     background-color: pink;
 }
 
+#over {
+    color: purple;
+}
+
+#thee {
+    color: pink;
+}
+
+#lazy {
+    color: white;
+}
+
+#dog {
+    color: grey;
+}
+
+.black {
+    border: 10px solid green;
+    background-color: black;
+
+}
+
 p {
-    margin: 10px; display: inline;
     font-size: 300%;
+    display: inline;
+}
+
+div {
+    display: inline-block;
+    margin: -2px;
 }
