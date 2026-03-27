@@ -1,4 +1,120 @@
 #red {
     background-color: red;
     color: red;
+    width: 10%;
+}
+
+#pink {
+    background-color:salmon;
+    color: salmon;
+    width: 90%;
+}
+
+#yellow {
+    background-color: yellow;
+    color: yellow;
+    width: 20%;
+}
+
+#cream {
+    background-color: rgb(252, 252, 232);
+    color: rgb(252, 252, 232);
+    width: 80%;
+}
+
+#blue {
+    background-color: blue;
+    color: blue;
+    width: 30%;
+}
+
+#lightblue2 {
+    background-color: lightskyblue;
+    color: lightskyblue;
+    width: 70%;
+}
+
+#green {
+    background-color: green;
+    color: green;
+    width: 40%;
+}
+
+#lightgreen2 {
+    background-color: lightgreen;
+    color: lightgreen;
+    width: 60%;
+}
+
+#purple {
+    background-color: purple;
+    color: purple;
+    width: 50%;
+}
+
+#lilac {
+    background-color: plum;
+    color:plum;
+    width: 50%;
+}
+
+#lightgreen {
+    background-color: lightgreen;
+    color: lightgreen;
+    width: 60%;
+}
+
+#green2 {
+    background-color: green;
+    color: green;
+    width: 40%;
+}
+
+#lightblue {
+    background-color: lightskyblue;
+    color: lightskyblue;
+    width: 70%;
+}
+
+#darkblue {
+    background-color: blue;
+    color: blue;
+    width: 30%;
+}
+
+#cream2 {
+    background-color: rgb(252, 252, 232);
+    color: rgb(252, 252, 232);
+    width: 80%;
+}
+
+#yellow2 {
+    background-color: yellow;
+    color: yellow;
+    width: 20%;
+}
+
+#pink2 {
+    background-color: salmon;
+    color: salmon;
+    width: 90%;
+}
+
+#red2 {
+    background-color: red;
+    color: red;
+    width: 10%;
+}
+
+body {
+    margin: 0%;
+}
+
+div {
+    height:11.25%;
+    display: inline-block; margin: -2px;
+}
+
+p {
+    display: inline;
 }
