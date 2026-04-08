@@ -1,0 +1,53 @@
+#pink {
+    background-color: pink;
+    color: pink;
+    height: 500px;
+    width: 500px;
+}
+
+#teal {
+    background-color: aquamarine;
+    color: aquamarine;
+    width: 400px;
+    height: 166.66px;
+}
+
+#blue {
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+    width: 400px;
+    height: 166.66px;
+}
+
+#purple {
+    background-color: plum;
+    color: plum;
+    width: 400px;
+    height: 166.66px;
+}
+
+#yellow {
+    background-color: khaki;
+    color: khaki;
+    height: 500px;
+    width: 500px;
+}
+
+div {
+    display: inline-block;
+}
+
+#yes {
+    position: relative;
+    width: 400px;
+    margin-left: -.14%;
+    margin-right: -.15%;
+}
+
+body {
+    text-align: center;
+}
+
+*{
+    vertical-align: top;
+}
