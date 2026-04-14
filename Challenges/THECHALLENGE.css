@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+}
+
+#TopMenu {
+    display: grid;
+    place-items: center;
+    background-color: hsl(240, 11%, 96%);
+    height: 70px;
+    margin: -8px;
+    word-spacing: 20px;
+}
+
+.TopMenu {
+    color: hsl(240, 1%, 28%);
+}
+
+#Iconbar {
+    display: grid;
+    place-items: center;
+    background-color: hsl(240, 33%, 99%);
+    text-align: center;
+    height: 210px;
+    margin: -8px;
+    margin-top: -16px;
+}
+
+#topbar {
+    display: grid;
+    place-items: center;
+    background-color: hsl(240, 11%, 96%);
+    text-align: center;
+    height: 160px;
+    margin: -8px;
+    margin-top: -16px;
+    font-size: 30px;
+}
+
+#bottom {
+    display: grid;
+    place-items: center;
+    background-color:black;
+    text-align: center;
+    height: 100%;
+    margin: -8px;
+    margin-top: -16px;
+}
+
+p {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 0%;
+}
