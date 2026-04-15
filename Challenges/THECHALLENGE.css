@@ -3,16 +3,18 @@ body {
 }
 
 #TopMenu {
-    display: grid;
-    place-items: center;
+    display: inline-block;
+    text-align: center;
     background-color: hsl(240, 11%, 96%);
     height: 70px;
+    width: 101%;
     margin: -8px;
-    word-spacing: 20px;
+    word-spacing: 50px;
 }
 
 .TopMenu {
     color: hsl(240, 1%, 28%);
+    margin-top: 1%;
 }
 
 #Iconbar {
@@ -46,7 +48,43 @@ body {
     margin-top: -16px;
 }
 
+
 p {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     margin-top: 0%;
+    display: inline-block;
+}
+
+.topbar {
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.New {
+    color: orange;
+}
+
+.iPhone {
+    color: bisque;
+}
+
+.Price {
+    color: white;
+}
+
+.learn  {
+    color: hsl(210, 83%, 44%);
+}
+
+#applelogo {
+    display: inline-block;
+    justify-items: center;
+}
+
+#searc {
+    display: inline-block;
+}
+
+#shopping {
+    display: inline-block;
 }
