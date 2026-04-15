@@ -18,12 +18,15 @@ body {
 }
 
 #Iconbar {
-    display: grid;
+    display: inline-block;
     background-color: hsl(240, 33%, 99%);
     text-align: center;
     height: 210px;
-    margin: -8px;
-    margin-top: -16px;
+}
+
+#fifteen {
+    margin-top: 45px;
+    margin-right: 55%;
 }
 
 #topbar {
