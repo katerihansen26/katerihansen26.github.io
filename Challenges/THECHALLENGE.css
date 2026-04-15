@@ -19,7 +19,6 @@ body {
 
 #Iconbar {
     display: grid;
-    place-items: center;
     background-color: hsl(240, 33%, 99%);
     text-align: center;
     height: 210px;
