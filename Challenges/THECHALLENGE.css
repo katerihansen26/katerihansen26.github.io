@@ -25,23 +25,41 @@ body {
     width: 100%;
 }
 
+#fifteenpro {
+    display: inline-block;
+}
+
+    #imagefifteenpro {
+        display: block;
+        margin-top: 20px;
+}
+
+    .fifteenpro {
+        display: block;
+}
+
+    .Newpro {
+        display: block;
+        color: rgb(255, 94, 0);
+}
+
 #fifteen {
-    display: block;
+    display: inline-block;
+}
+    #imagefifteen {
+        display: block;
+        margin-top: 20px;
 }
 
-#imagefifteen {
-    display: block;
-    margin-top: 20px;
+    .fifteen {
+        display: block;
 }
 
-.fifteeen {
-    display: block;
+    .Neww {
+        display: block;
+        color: rgb(255, 94, 0);
 }
 
-.Neww {
-    display: block;
-    color: orange;
-}
 #topbar {
     display: inline-block;
     place-items: center;
@@ -78,19 +96,24 @@ p {
 }
 
 .New {
-    color: orange;
+    color: rgb(255, 94, 0);
+    display: block;
+    margin-top: 6%;
 }
 
 .iPhone {
     color: bisque;
+    display: block;
 }
 
 .Price {
     color: white;
+    display: block;
 }
 
 .learn  {
     color: hsl(210, 83%, 44%);
+    display: block;
 }
 
 #applelogo {
