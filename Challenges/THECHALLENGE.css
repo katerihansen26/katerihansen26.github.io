@@ -7,14 +7,14 @@ body {
     text-align: center;
     background-color: hsl(240, 11%, 96%);
     height: 70px;
-    width: 101%;
+    width: 100%;
     margin: -8px;
     word-spacing: 50px;
 }
 
 .TopMenu {
     color: hsl(240, 1%, 28%);
-    margin-top: 1%;
+    margin-top: .8%;
 }
 
 #Iconbar {
@@ -22,32 +22,46 @@ body {
     background-color: hsl(240, 33%, 99%);
     text-align: center;
     height: 210px;
+    width: 100%;
 }
 
 #fifteen {
-    margin-top: 45px;
-    margin-right: 55%;
+    display: block;
 }
 
+#imagefifteen {
+    display: block;
+    margin-top: 20px;
+}
+
+.fifteeen {
+    display: block;
+}
+
+.Neww {
+    display: block;
+    color: orange;
+}
 #topbar {
-    display: grid;
+    display: inline-block;
     place-items: center;
     background-color: hsl(240, 11%, 96%);
     text-align: center;
-    height: 160px;
+    height: 175px;
     margin: -8px;
-    margin-top: -16px;
     font-size: 30px;
+    width: 100%;
 }
 
 #bottom {
-    display: grid;
+    display: inline-block;
     place-items: center;
     background-color:black;
     text-align: center;
     height: 100%;
     margin: -8px;
     margin-top: -16px;
+    width: 100%;
 }
 
 
@@ -60,6 +74,7 @@ p {
 .topbar {
     margin-right: 30%;
     margin-left: 30%;
+    margin-top: 1.5%;
 }
 
 .New {
@@ -81,12 +96,15 @@ p {
 #applelogo {
     display: inline-block;
     justify-items: center;
+    vertical-align: -3px;
 }
 
 #searc {
     display: inline-block;
+    vertical-align: -6px;
 }
 
 #shopping {
     display: inline-block;
+    vertical-align: -6px;
 }
