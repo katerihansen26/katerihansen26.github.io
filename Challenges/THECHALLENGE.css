@@ -23,57 +23,136 @@ body {
     text-align: center;
     height: 210px;
     width: 100%;
+    vertical-align: bottom;
 }
 
 #fifteenpro {
     display: inline-block;
+    padding: 25px;
 }
-
-    #imagefifteenpro {
-        display: block;
-        margin-top: 20px;
-}
-
     .fifteenpro {
         display: block;
-}
+    }
 
     .Newpro {
         display: block;
         color: rgb(255, 94, 0);
-}
+        margin-top: -13px;
+    }
 
 #fifteen {
     display: inline-block;
+    padding: 25px;
 }
-    #imagefifteen {
-        display: block;
-        margin-top: 20px;
-}
-
     .fifteen {
         display: block;
-}
+    }
 
     .Neww {
         display: block;
         color: rgb(255, 94, 0);
-}
+        margin-top: -13px;
+    }
 
 #fourteen {
     display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
 }
-
-    #fourteen {
-        display: block;
-        margin-top: 20px;
-}
-
     .fourteen {
         display: block;
+    }
+
+#thirteen {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
 }
+    .thirteen {
+        display: block;
+    }
 
+#SE {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .SE {
+        display: block;
+    }
 
+#Compare {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Compare {
+        display: block;
+    }
+
+#Airpod {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Airpod {
+        display: block;
+    }
+
+#Airtag {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Airtag {
+        display: block;
+    }
+
+#Accessories {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Accessoriess {
+        display: block;
+    }
+
+#Applecard {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Applecard {
+        display: block;
+    }
+
+#iOS {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .iOS {
+        display: block;
+    }
+
+#Shop {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+    .Shop {
+        display: block;
+    }
 
 
 #topbar {
@@ -90,7 +169,7 @@ body {
 #bottom {
     display: inline-block;
     place-items: center;
-    background-color:black;
+    background-color: black;
     text-align: center;
     height: 100%;
     margin: -8px;
@@ -100,7 +179,7 @@ body {
 
 
 p {
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin-top: 0%;
     display: inline-block;
 }
@@ -127,7 +206,7 @@ p {
     display: block;
 }
 
-.learn  {
+.learn {
     color: hsl(210, 83%, 44%);
     display: block;
 }
