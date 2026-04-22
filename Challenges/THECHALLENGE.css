@@ -154,6 +154,11 @@ body {
         display: block;
     }
 
+p {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 0%;
+    display: inline-block;
+}
 
 #topbar {
     display: inline-block;
@@ -162,16 +167,25 @@ body {
     height: 175px;
     font-size: 30px;
     width: 100%;
+    line-height: 15px;
 }
 
 .topbar {
-    display: inline-block;
+    display: block;
     margin-top: 50px;
+}
+
+.tradein {
+    display: inline;
+}
+
+sup {
+    font-size: 18px;
 }
 
 .ShopiPhone {
     color: hsl(210, 83%, 44%);
-    display: inline-block;
+    display: inline;
 }
 
 #boxtext {
@@ -195,17 +209,14 @@ body {
 }
 
 .buy {
-    border: 30px;
-    border-color: hsl(210, 83%, 44%);
+    border-radius: 25px;
+    background-color: hsl(210, 83%, 44%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     color: white;
-    font-size: 20px;
-}
-
-
-p {
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    margin-top: 0%;
-    display: inline-block;
+    font-size: 25px;
 }
 
 
@@ -224,13 +235,13 @@ p {
 .Price {
     color: white;
     display: block;
-    font-size: 20px;
+    font-size: 33px;
 }
 
 .learn {
     color: hsl(210, 83%, 44%);
     display: block;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #applelogo {
