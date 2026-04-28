@@ -20,7 +20,6 @@ body {
     margin: -7px;
     height: 70px;
     width: 101%;
-    border: 5px solid gray;
 }
 
     #noodleslogo {
@@ -44,3 +43,8 @@ body {
     .Order {
         display: inline;
     }
+
+#banner {
+    margin-top: 60px;
+    margin-left: 20%;
+}
