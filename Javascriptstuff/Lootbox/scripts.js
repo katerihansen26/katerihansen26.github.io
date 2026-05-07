@@ -23,17 +23,18 @@ function rolllootbox(){
         lootBox.style.backgroundColor = "orangered";
     }
 
-    else if (number < 99){
-        lootBox.innerHTML = "LEGENDARY";
-        lootBox.style.backgroundColor = "orangered";
-    }
-
     else  {
         lootBox.innerHTML = "MYTHIC";
         lootBox.style.backgroundColor = "pink";
     }
 }
 
-
-
 document.getElementById("roll").addEventListener("click", rolllootbox);
+
+function commonCounter(){
+    count = count + 1
+    document.getElementById("Common").innerHTML = count;
+}
+
+document.getElementById("Common").addEventListener("<5")
+
