@@ -1,6 +1,7 @@
-function changeText(){
-    document.getElementById("text").innerHTML = "POTATO";
+var count = 0
+
+function plusOne(){
+    count = count +1;
+    document.getElementById("count-text").innerHTML = count;
+    
 }
-
-
-document.getElementById("change-text").addEventListener("click", changeText);
