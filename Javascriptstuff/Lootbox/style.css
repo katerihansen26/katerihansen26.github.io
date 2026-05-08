@@ -8,3 +8,23 @@ div {
 button, p {
     display: inline-block;
 }
+
+#Common{
+    background-color: white;
+}
+
+#Uncommon{
+    background-color: blue;
+}
+
+#Rare{
+    background-color: gold;
+}
+
+#Legendary{
+    background-color: orangered;
+}
+
+#Mythic{
+    background-color: pink;
+}

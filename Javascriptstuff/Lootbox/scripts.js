@@ -1,26 +1,26 @@
 var lootBox = document.getElementById("lootbox")
 
-var Common = document.getElementById("Common")
+var common = document.getElementById("Common")
 var c_count = 0;
 
-var Uncommon = document.getElementById("Uncommon")
+var uncommon = document.getElementById("Uncommon")
 var u_count = 0;
 
-var Rare = document.getElementById("Rare")
+var rare = document.getElementById("Rare")
 var r_count = 0;
 
-var Legendary = document.getElementById("Legendary")
+var legendary = document.getElementById("Legendary")
 var l_count = 0;
 
-var <Mythic> = document.getElementById("Mythic")
+var mythic = document.getElementById("Mythic")
 var cm_count = 0;
 
 function rolllootbox(){
     number = Math.floor(Math.random() * 100);
 
     if (number < 50) {
-        lootBox.inneHTML = "COMMON";
-        lootBox.style.backgroundColor = "white:";
+        lootBox.innerHTML = "COMMON";
+        lootBox.style.backgroundColor = "white";
         c_count = c_count +1;
         common.innerHTML = c_count;
     }
@@ -55,8 +55,3 @@ function rolllootbox(){
 }
 
 document.getElementById("roll").addEventListener("click", rolllootbox);
-
-function commonCounter(){
-    count = count + 1
-    document.getElementById("Common").innerHTML = count;
-}
