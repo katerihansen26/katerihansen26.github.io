@@ -1,14 +1,14 @@
 var password = document.getElementById("Password");
-var error = document.getElementById ("Error");
+var error = document.getElementById("Error");
 
-function Password (){
+function Password(){
     if(password.value == "password") {
-        error.innerhtml = "Access Yes";
+        error.innerHTML = "Access Yes";
         
     }
 
     else{
-        error.innerhtml = "Access No";
+        error.innerHTML = "Access No";
     }
 }
 
