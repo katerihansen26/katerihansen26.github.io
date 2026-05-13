@@ -1,3 +1,95 @@
+h1 {
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
 #q1a1 {
-    display: inline-block;
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q1a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q1a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q1a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+
+
+#q2a1 {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q2a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q2a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q2a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+
+
+#q3a1 {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q3a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q3a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q3a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
 }
