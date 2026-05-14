@@ -6,6 +6,26 @@ h3 {
     text-decoration: underline;
 }
 
+#q1 {
+    background-color: antiquewhite;
+}
+#q2 {
+    background-color: burlywood;
+}
+#q3 {
+    background-color: antiquewhite;
+}
+#q4 {
+    background-color: burlywood;
+}
+#q5 {
+    background-color: antiquewhite;
+}
+#q6 {
+    background-color: burlywood;
+}
+
+
 #q1a1 {
     display: block;
     background-color: rgb(255, 0, 0);
@@ -88,6 +108,96 @@ h3 {
 }
 
 #q3a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+
+
+#q4a1 {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q4a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q4a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q4a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+
+
+#q5a1 {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q5a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q5a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q5a4 {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+
+
+#q6a1 {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q6a2 {
+    display: block;
+    background-color: rgb(157, 255, 0);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q6a3 {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 5px;
+    margin-right: 93%;
+}
+
+#q6a4 {
     display: block;
     background-color: rgb(255, 230, 0);
     padding: 5px;
