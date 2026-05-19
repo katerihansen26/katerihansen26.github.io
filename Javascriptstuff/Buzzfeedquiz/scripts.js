@@ -29,7 +29,7 @@ var q6a3 = document.getElementById("q6a3");
 var q6a4 = document.getElementById("q6a4");
 
 var result = document.getElementById("result");
-var submit_button = document.getElementById("submit-button");
+var submit_button = document.getElementById("submit_button");
 
 
 var score_broke = 0;
@@ -52,7 +52,7 @@ function check_q1(){
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q1!";
     }
 
     check_q2();
@@ -73,7 +73,7 @@ function check_q2(){
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q2!";
     }
     check_q3();
 }
@@ -93,7 +93,7 @@ function check_q3() {
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q3!";
     }
     check_q4();
 }
@@ -113,7 +113,7 @@ function check_q4() {
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q4!";
     }
     check_q5();
 }
@@ -133,7 +133,7 @@ function check_q5() {
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q5!";
     }
     check_q6();
 }
@@ -153,27 +153,31 @@ function check_q6() {
         score_crazyrich = score_crazyrich + 1;
     }
     else{
-        result.innerHTML = "You didn't choose anything!";
+        result.innerHTML = "You didn't choose anything on q6!";
     }
     calculate_result();
 }
 
 
 function calculate_result(){
-    if (score_crazyrich > score_broke && score_crazyrich > score_middleclass && score_crazyrich > score_rich){
+    if (score_crazyrich >= score_broke && score_crazyrich >= score_middleclass && score_crazyrich >= score_rich){
         result.innerHTML = "You're destined to be crazy rich :)!"
     }
 
-    else if (score_rich > score_crazyrich && score_rich > score_middleclass && score_rich > score_broke){
+    else if (score_rich >= score_crazyrich && score_rich >= score_middleclass && score_rich >= score_broke){
         result.innerHTML = "You're destined to be rich!"
     }
 
-    else if (score_middleclass > score_crazyrich && score_middleclass > score_rich && score_middleclass > score_broke){
+    else if (score_middleclass >= score_crazyrich && score_middleclass >= score_rich && score_middleclass >= score_broke){
         result.innerHTML = "You're destined to be middleclass!"
     }
 
-    else if (score_broke > score_crazyrich && score_broke > score_rich && score_broke > score_middleclass){
+    else if (score_broke >= score_crazyrich && score_broke >= score_rich && score_broke >= score_middleclass){
         result.innerHTML = "You're destined to be broke :(!"
+    }
+
+    else {
+        result.innerHTML = "Something went wrong"
     }
 
 }
