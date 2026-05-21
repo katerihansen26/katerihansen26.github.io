@@ -1,0 +1,359 @@
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js" defer></script>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bundt Cake Trail 🐱🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- ░░░ SCANLINE OVERLAY ░░░ -->
+<div id="scanlines"></div>
+ 
+<div id="game-container">
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║        TITLE SCREEN          ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-title" class="screen active">
+    <div class="pixel-border-box title-box">
+      <div class="title-art">
+        <div class="pixel-cat-big">🐱</div>
+        <div class="blink-slow">✦ ✦ ✦</div>
+        <h1 class="pixel-title">THE BUNDT<br>CAKE TRAIL</h1>
+        <div class="blink-slow">✦ ✦ ✦</div>
+        <p class="title-sub">A PIXEL PASTRY ADVENTURE</p>
+        <p class="title-sub2">YEAR OF THE CROISSANT, 1871</p>
+      </div>
+      <div class="title-menu">
+        <button class="px-btn px-btn-lg" onclick="goToCustomize()">▶ NEW JOURNEY</button>
+        <div class="title-hint blink-slow">PRESS TO BEGIN</div>
+      </div>
+      <div class="title-footer">
+        <span>🎂 1,200 MILES TO BUNDT CAKE MTN</span>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║      CAT CUSTOMIZATION       ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-customize" class="screen">
+    <div class="screen-header">
+      <span class="px-label">◀◀ THE BUNDT CAKE TRAIL ▶▶</span>
+      <span class="px-label blink-slow">STEP 1 OF 3</span>
+    </div>
+    <div class="screen-title-bar">⚙ ASSEMBLE YOUR PARTY ⚙</div>
+ 
+    <div class="customize-layout">
+      <!-- Leader cat panel -->
+      <div class="pixel-panel" id="leader-panel">
+        <div class="panel-title">── YOUR LEAD CAT ──</div>
+ 
+        <div class="cat-preview-box">
+          <div id="preview-sprite" class="cat-sprite-xl">😺</div>
+          <div id="preview-name-display" class="cat-name-display">BISCUIT</div>
+          <div id="preview-title-display" class="cat-title-display">THE HARDY</div>
+        </div>
+ 
+        <div class="form-row">
+          <label class="px-label">NAME YOUR CAT:</label>
+          <input type="text" id="cat-name-input" class="px-input" maxlength="12" placeholder="BISCUIT" value="BISCUIT">
+        </div>
+ 
+        <div class="form-row">
+          <label class="px-label">APPEARANCE:</label>
+          <div class="sprite-picker" id="sprite-picker">
+            <div class="sprite-opt selected" data-sprite="😺" onclick="selectSprite(this)">😺</div>
+            <div class="sprite-opt" data-sprite="😸" onclick="selectSprite(this)">😸</div>
+            <div class="sprite-opt" data-sprite="🐱" onclick="selectSprite(this)">🐱</div>
+            <div class="sprite-opt" data-sprite="😻" onclick="selectSprite(this)">😻</div>
+            <div class="sprite-opt" data-sprite="😼" onclick="selectSprite(this)">😼</div>
+            <div class="sprite-opt" data-sprite="🙀" onclick="selectSprite(this)">🙀</div>
+            <div class="sprite-opt" data-sprite="😽" onclick="selectSprite(this)">😽</div>
+            <div class="sprite-opt" data-sprite="🐈" onclick="selectSprite(this)">🐈</div>
+            <div class="sprite-opt" data-sprite="🐈‍⬛" onclick="selectSprite(this)">🐈‍⬛</div>
+          </div>
+        </div>
+ 
+        <div class="form-row">
+          <label class="px-label">CLASS / PERK:</label>
+          <div class="class-picker" id="class-picker">
+            <div class="class-opt selected" data-class="0" onclick="selectClass(this)">
+              <span class="class-icon">🛡️</span>
+              <span class="class-name">GUARDIAN</span>
+              <span class="class-desc">-30% dmg taken</span>
+            </div>
+            <div class="class-opt" data-class="1" onclick="selectClass(this)">
+              <span class="class-icon">🍀</span>
+              <span class="class-name">FORAGER</span>
+              <span class="class-desc">+25% forage yield</span>
+            </div>
+            <div class="class-opt" data-class="2" onclick="selectClass(this)">
+              <span class="class-icon">🧙</span>
+              <span class="class-name">MYSTIC</span>
+              <span class="class-desc">Better event odds</span>
+            </div>
+            <div class="class-opt" data-class="3" onclick="selectClass(this)">
+              <span class="class-icon">🎲</span>
+              <span class="class-name">GAMBLER</span>
+              <span class="class-desc">High risk, high reward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Party cats panel -->
+      <div class="pixel-panel" id="party-panel">
+        <div class="panel-title">── YOUR COMPANIONS ──</div>
+        <p class="hint-text">▸ NAME & CUSTOMIZE YOUR 3 COMPANIONS</p>
+        <div id="companion-list"></div>
+        <div class="nav-btns">
+          <button class="px-btn" onclick="goToTitle()">◀ BACK</button>
+          <button class="px-btn px-btn-accent" onclick="goToSupplies()">NEXT: SUPPLIES ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║       SUPPLY SHOP            ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-supplies" class="screen">
+    <div class="screen-header">
+      <span class="px-label">◀◀ THE BUNDT CAKE TRAIL ▶▶</span>
+      <span class="px-label blink-slow">STEP 2 OF 3</span>
+    </div>
+    <div class="screen-title-bar">🏪 MADAME CHOUX'S EMPORIUM 🏪</div>
+ 
+    <div class="shop-intro">
+      <div class="shopkeeper-sprite">👩‍🍳</div>
+      <div class="shopkeeper-speech pixel-speech">
+        <p id="shopkeeper-line">"Welcome, traveler! Bundt Cake Mountain is a long & perilous road. Stock up wisely — the trail shows no mercy to the underprepared!"</p>
+      </div>
+    </div>
+ 
+    <div class="supply-layout">
+      <div class="pixel-panel supply-store-panel">
+        <div class="panel-title">── FOR SALE ──</div>
+        <div class="supply-gold-display">
+          💰 CRUMBS: <span id="supply-gold-display">200</span>
+        </div>
+        <div class="supply-grid" id="supply-grid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+ 
+      <div class="pixel-panel supply-cart-panel">
+        <div class="panel-title">── YOUR PACK ──</div>
+        <div class="cart-list" id="cart-list">
+          <!-- populated by JS -->
+        </div>
+        <div class="cart-total">
+          <div class="cart-row">SPENT: <span id="cart-spent">0</span> 🪙</div>
+          <div class="cart-row">LEFT: <span id="cart-left">200</span> 🪙</div>
+        </div>
+        <div class="nav-btns">
+          <button class="px-btn" onclick="goToCustomize()">◀ BACK</button>
+          <button class="px-btn px-btn-accent" onclick="goToDepart()">DEPART! ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║          MAIN GAME           ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-game" class="screen">
+ 
+    <!-- Top HUD bar -->
+    <div id="hud-bar">
+      <div class="hud-cell">
+        <span class="hud-lbl">DAY</span>
+        <span class="hud-val" id="hud-day">1</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-lbl">SEASON</span>
+        <span class="hud-val" id="hud-season">SPRING</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-lbl">MILES</span>
+        <span class="hud-val" id="hud-miles">0</span>
+      </div>
+      <div class="hud-cell">
+        <span class="hud-lbl">PACE</span>
+        <span class="hud-val" id="hud-pace">STEADY</span>
+      </div>
+      <div class="hud-cell hud-title-cell">
+        <span class="hud-game-title">🎂 BUNDT CAKE TRAIL 🐾</span>
+      </div>
+    </div>
+ 
+    <!-- Scene canvas -->
+    <div id="scene">
+      <!-- Sky layers -->
+      <div id="sky-layer"></div>
+      <div id="stars-layer"></div>
+      <!-- Pixel sun/moon -->
+      <div id="celestial"></div>
+      <!-- Clouds -->
+      <div class="px-cloud px-cloud-1"></div>
+      <div class="px-cloud px-cloud-2"></div>
+      <div class="px-cloud px-cloud-3"></div>
+      <!-- Distant mountains -->
+      <div class="mountain-row" id="mountain-row-far">
+        <div class="px-mountain mtn-far" style="left:0px"></div>
+        <div class="px-mountain mtn-far" style="left:120px"></div>
+        <div class="px-mountain mtn-far mtn-med" style="left:230px"></div>
+        <div class="px-mountain mtn-far" style="left:380px"></div>
+        <div class="px-mountain mtn-far mtn-med" style="left:500px"></div>
+        <div class="px-mountain mtn-far" style="left:650px"></div>
+      </div>
+      <!-- Goal mountain -->
+      <div id="goal-mountain">
+        <div class="goal-mtn-shape"></div>
+        <div class="goal-mtn-label blink-slow">🎂</div>
+      </div>
+      <!-- Ground -->
+      <div id="ground-layer">
+        <div id="trail-road"></div>
+        <!-- Pixel grass tufts -->
+        <div class="grass-tuft" style="left:5%">🌿</div>
+        <div class="grass-tuft" style="left:18%">🍄</div>
+        <div class="grass-tuft" style="left:33%">🌿</div>
+        <div class="grass-tuft" style="left:55%">🍄</div>
+        <div class="grass-tuft" style="left:70%">🌿</div>
+      </div>
+      <!-- Wagon sprite -->
+      <div id="wagon-sprite">
+        <div id="wagon-body-px">
+          <div class="wagon-top">
+            <span id="wagon-cats">🐱🧁🐱</span>
+          </div>
+          <div class="wagon-base">
+            <div class="wagon-axle"></div>
+            <div class="px-wheel wheel-l"></div>
+            <div class="px-wheel wheel-r"></div>
+          </div>
+        </div>
+        <div class="wagon-dust" id="wagon-dust"></div>
+      </div>
+    </div>
+ 
+    <!-- Progress track -->
+    <div id="progress-row">
+      <span class="px-label prog-lbl">🏕 START</span>
+      <div id="progress-track">
+        <div id="progress-fill"></div>
+        <div id="progress-cat">🐾</div>
+      </div>
+      <span class="px-label prog-lbl">🎂 PEAK</span>
+    </div>
+ 
+    <!-- Stats row -->
+    <div id="stats-row">
+      <div class="stat-pip" id="pip-pastries">
+        <div class="pip-icon">🍩</div>
+        <div class="pip-lbl">PASTRIES</div>
+        <div class="pip-val" id="sv-pastries">60</div>
+      </div>
+      <div class="stat-pip" id="pip-hp">
+        <div class="pip-icon">❤️</div>
+        <div class="pip-lbl">AVG HP</div>
+        <div class="pip-val" id="sv-health">100</div>
+      </div>
+      <div class="stat-pip" id="pip-morale">
+        <div class="pip-icon">⭐</div>
+        <div class="pip-lbl">MORALE</div>
+        <div class="pip-val" id="sv-morale">80</div>
+      </div>
+      <div class="stat-pip" id="pip-gold">
+        <div class="pip-icon">🪙</div>
+        <div class="pip-lbl">CRUMBS</div>
+        <div class="pip-val" id="sv-gold">50</div>
+      </div>
+      <div class="stat-pip" id="pip-med">
+        <div class="pip-icon">💊</div>
+        <div class="pip-lbl">CATNIP MED</div>
+        <div class="pip-val" id="sv-medicine">3</div>
+      </div>
+      <div class="stat-pip" id="pip-magic">
+        <div class="pip-icon">✨</div>
+        <div class="pip-lbl">MAGIC DUST</div>
+        <div class="pip-val" id="sv-magic">0</div>
+      </div>
+    </div>
+ 
+    <!-- Party display -->
+    <div id="party-hud"></div>
+ 
+    <!-- Message log -->
+    <div id="log-box">
+      <div id="log-inner"></div>
+    </div>
+ 
+    <!-- Action panel -->
+    <div id="action-bar">
+      <div class="action-label">▸ CHOOSE ACTION:</div>
+      <div class="action-btns">
+        <button class="px-btn px-act" id="btn-travel" onclick="doTravel()">🐾 TRAVEL</button>
+        <button class="px-btn px-act" id="btn-rest" onclick="doRest()">😴 REST</button>
+        <button class="px-btn px-act" id="btn-forage" onclick="doForage()">🌿 FORAGE</button>
+        <button class="px-btn px-act" id="btn-hunt" onclick="doHunt()">🎣 HUNT</button>
+        <button class="px-btn px-act" id="btn-shop" onclick="openShop()">🏪 SHOP</button>
+        <button class="px-btn px-act" id="btn-magic" onclick="doMagic()">✨ CAST MAGIC</button>
+        <button class="px-btn px-act px-btn-pace" id="btn-pace" onclick="cyclePace()">
+          ⏩ PACE: <span id="pace-label">STEADY</span>
+        </button>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║         WIN SCREEN           ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-win" class="screen">
+    <div class="pixel-border-box end-box">
+      <div class="end-icon blink-slow">🎂</div>
+      <h2 class="pixel-title end-title">BUNDT CAKE<br>MOUNTAIN!</h2>
+      <p class="end-sub">YOUR BRAVE CAT PARTY HAS ARRIVED!</p>
+      <p class="end-sub">THE GREAT BUNDT CAKE GLOWS GOLDEN.</p>
+      <div id="win-stats" class="end-stats"></div>
+      <button class="px-btn px-btn-lg" onclick="location.reload()">▶ PLAY AGAIN</button>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║        LOSE SCREEN           ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="screen-lose" class="screen">
+    <div class="pixel-border-box end-box end-box-lose">
+      <div class="end-icon">😿</div>
+      <h2 class="pixel-title end-title-lose">GAME OVER</h2>
+      <p class="end-sub-lose">THE TRAIL CLAIMS ANOTHER...</p>
+      <p class="end-sub-lose" id="lose-msg">Your cats have perished far from the mountain.</p>
+      <div id="lose-stats" class="end-stats end-stats-lose"></div>
+      <button class="px-btn px-btn-lg" onclick="location.reload()">▶ TRY AGAIN</button>
+    </div>
+  </div>
+ 
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║          MODAL               ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div id="modal-overlay">
+    <div id="modal-box" class="pixel-border-box">
+      <div id="modal-icon" class="modal-icon-big">❓</div>
+      <div id="modal-title" class="modal-ttl">EVENT!</div>
+      <div id="modal-desc" class="modal-dsc"></div>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+ 
+</div><!-- end #game-container -->
+ 
+<script src="game.js"></script>
+</body>
+</html>
